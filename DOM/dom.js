@@ -31,4 +31,26 @@ document.querySelector()
 
 // 12. Select the body element and use style.cssText to change the text color and background color
 
-//13. Change src attribute of the image 
+//13. Change src attribute of the image using .src property
+
+// 14. create a new div element
+document.createElement()
+
+// 15. save the new div to a variable
+
+// 16.  append the new div to the body 
+
+// 17. use innerText to giv the new div the text "Hello World"
+
+// 18. create and append a new p tag to the div
+
+// 19. use .remove() to delete the new div from the page
+
+// 20. Exercise 4 Create img Element 
+// Using JS, create an <img> element 
+// Use a method to give it a value for the src attribute
+// Append it to the page inside another element besides the body element
+// Open the html file in the browser or use Live Server to view it
+// Call the remove() method on your img element to remove it from the page
+
+
