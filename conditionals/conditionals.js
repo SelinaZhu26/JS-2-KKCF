@@ -1,9 +1,12 @@
+// = assignment operator - assigns a value to a varialbe
+
 // Equal values
 10 == 3 // returns false
 5 == 5 // returns true
 6 == "6" // returns true
+7 === "7" //strict equality - return false 
 // console.log('5 and 5 are equal:', 5 == 5);
-// console.log('10 and 3 are equal:', 10 == 3);
+// console.log('10 and 3 are equal:', 25 == 3);
 
 // Not equal values
 10 != 3 // returns true
@@ -64,11 +67,11 @@ let x = 4;
 let y = 8;
 let z = 12;
 
-x < 5 && y > 5; // returns true because both conditions are true
-x > 5 && z > 10; // returns false because x > 5 is false
+4 < 5 && 8 > 5; // returns true because both conditions are true
+4 > 5 && 12 > 10; // returns false because x > 5 is false
 y > 10 && z > 10; // returns false because y > 10 is false
-// console.log('x < 5 and y > 5:', x < 5 && y > 5);
-// console.log('x > 5 and z > 10:', x > 5 && z > 10);
+// console.log('4 < 5 and 8 > 5:', x < 5 && y > 5);
+// console.log('4 > 5 and 12 > 10:', x > 5 && z > 10);
 // console.log('y > 10 and z > 10:', y > 10 && z > 10);
 
 // OR operator
@@ -76,21 +79,21 @@ let a = 3;
 let b = 6;
 let c = 9;
 
-a > 2 || b < 5; // returns true because a > 2 is true
+3 > 2 || 6 < 5; // returns true because a > 2 is true
 a < 2 || b < 5; // returns false because both conditions are false
 b > 5 || c < 8; // returns true because b > 5 is true
-// console.log('a > 2 or b < 5:', a > 2 || b < 5);
+// console.log('3 > 2 or 6 < 5:', a > 2 || b < 5);
 // console.log('a < 2 or b < 5:', a < 2 || b < 5);
 // console.log('b > 5 or c < 8:', b > 5 || c < 8);
 
-//if statement 
-// let age = 25;
-// if (age >= 18) {
-//   console.log("You can vote!");
-// }
+// if statement 
+let age = 17;
+if (age >= 18) {
+  console.log("You can vote!");
+}
 
 //if else 
-// let number = 2
+// let number = 0
 // if(number > 0){
 //     console.log("number is positive")
 // }
@@ -98,17 +101,18 @@ b > 5 || c < 8; // returns true because b > 5 is true
 //     console.log("number is not greater than 0")
 // }
 
-//if else if else
-// let number = 2
-// if(number > 0){
-//     console.log("number is positive")
-// }
-// else if(number == 0){
-//     console.log("number is equal to 0")
-// }
-// else {
-//     console.log("number is negative")
-// }
+// if else if else
+let number = Math.floor(Math.random() * 100)
+console.log(number)
+if(number > 0){
+    console.log("number is positive")
+}
+else if(number == 0){
+    console.log("number is equal to 0")
+}
+else {
+    console.log("number is negative")
+}
 
 // Write a conditional statement to find the largest of three numbers
 // Make 3 variables that prompts the user for a number
