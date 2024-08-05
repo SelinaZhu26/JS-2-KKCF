@@ -34,19 +34,24 @@ document.querySelector("#transform").innerText = "Sailor Moon"
 
 // 11. Modify CSS - Select the element with the id 'text-output'
 // use the style.fontSize property to set the text size to 30px
+document.querySelector("#text-output").style.fontSize = "300px"
 
 // 12. Select the body element and use style.cssText to change the text color and background color
+document.querySelector("body").style.cssText = "color: white; background-color: black;"
 
 //13. Change src attribute of the image using .src property
 
 // 14. create a new div element
-document.createElement()
+document.createElement("div")
 
 // 15. save the new div to a variable
+let myDiv = document.createElement("div")
 
 // 16.  append the new div to the body 
+document.body.append(myDiv)
 
 // 17. use innerText to giv the new div the text "Hello World"
+myDiv.innerText = "Hello World"
 
 // 18. create and append a new p tag to the div
 
@@ -64,3 +69,5 @@ let myButton = document.querySelector("#myButton")
 myButton.addEventListener("click", function(){
     alert("using addEventListener")
 })
+
+
