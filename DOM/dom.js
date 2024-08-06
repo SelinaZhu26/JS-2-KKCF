@@ -5,7 +5,7 @@ document.getElementById("title")
 let myTitle = document.getElementById("title")
 
 // 3. console log the new variable 
-// console.log(myTitle)
+console.log(myTitle)
 
 // 4. Use query selector to select the first h2 
 document.querySelector("h2")
@@ -65,9 +65,65 @@ myDiv.innerText = "Hello World"
 // Call the remove() method on your img element to remove it from the page
 
 
-let myButton = document.querySelector("#myButton")
-myButton.addEventListener("click", function(){
-    alert("using addEventListener")
-})
+// let myButton = document.querySelector("#myButton")
+// myButton.addEventListener("click", function(){
+//     alert("using addEventListener")
+// })
 
 //hi Mo this is a change
+
+// creating a function
+
+
+// declare function
+// function sayHello() {
+//     //what function does
+//     alert("Hello, World!");
+// }
+// //call function
+// sayHello();
+
+// //parameters
+// function add2nums(a,b) {
+//     alert(a+b)
+// }
+
+// //pass in different numbers each time the function is called
+// add2nums(2,3)
+// add2nums(10,2)
+
+//addeventlistener
+
+//select button element
+let myButton = document.querySelector("button")
+
+// Function to handle button click
+function handleClick() {
+    alert('button was clicked!');
+}
+
+// use addEventListener to run the handleClick function when button is called
+myButton.addEventListener('click', handleClick)
+//we are listening for the click event, when it happens, run the handleClick function
+
+
+
+//random color exercise
+
+//select random color button
+
+let colorButton = document.querySelector("#random-color")
+
+// declare event handler function
+
+function randomColor() {
+    let randomR = Math.floor(Math.random() * 255)
+    let randomG = Math.floor(Math.random() * 255)
+    let randomB = Math.floor(Math.random() * 255)
+
+
+    //select body element and change background color
+    document.body.style.backgroundColor = `rgb(${randomR}, ${randomG}, ${randomB})`
+}
+
+colorButton.addEventListener("click", randomColor)
