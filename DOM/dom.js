@@ -5,7 +5,7 @@ document.getElementById("title")
 let myTitle = document.getElementById("title")
 
 // 3. console log the new variable 
-console.log(myTitle)
+// console.log(myTitle)
 
 // 4. Use query selector to select the first h2 
 document.querySelector("h2")
@@ -13,8 +13,13 @@ document.querySelector("h2")
 //5. Use query selector to select the paragraph by its class of 'description'
 document.querySelector(".description")
 
+// Use query selector to select an id
+document.querySelector("#title")
+
+
+
 // 6. Use query selector all to select all the h2's on the page
-console.log(document.querySelectorAll("h2"))
+// console.log(document.querySelectorAll("h2"))
 
 
 //7. Exercise 1 Create at least 3 different elements in the body of your html file
@@ -37,7 +42,7 @@ document.querySelector("#transform").innerText = "Sailor Moon"
 document.querySelector("#text-output").style.fontSize = "300px"
 
 // 12. Select the body element and use style.cssText to change the text color and background color
-document.querySelector("body").style.cssText = "color: white; background-color: black;"
+// document.querySelector("body").style.cssText = "color: white; background-color: black;"
 
 //13. Change src attribute of the image using .src property
 
@@ -114,16 +119,61 @@ myButton.addEventListener('click', handleClick)
 
 let colorButton = document.querySelector("#random-color")
 
-// declare event handler function
+// // declare event handler function
 
-function randomColor() {
-    let randomR = Math.floor(Math.random() * 255)
-    let randomG = Math.floor(Math.random() * 255)
-    let randomB = Math.floor(Math.random() * 255)
-
-
-    //select body element and change background color
-    document.body.style.backgroundColor = `rgb(${randomR}, ${randomG}, ${randomB})`
+function turnDark() {
+    // let randomR = Math.floor(Math.random() * 255)
+    // let randomG = Math.floor(Math.random() * 255)
+    // let randomB = Math.floor(Math.random() * 255)
+//     //select body element and change background color
+    // document.body.style.backgroundColor = `rgb(${randomR}, ${randomG}, ${randomB})`
+    // document.body.style.color = "black";
+    document.querySelector("body").style.cssText = "color: white; background-color: black;"
+    document.querySelector("#random-color").innerText = "Light Mode"
 }
 
-colorButton.addEventListener("click", randomColor)
+function turnLight() {
+    document.querySelector("body").style.cssText = "color: black; background-color: white;"
+    document.querySelector("#random-color").innerText = "Dark Mode"
+}
+
+
+let userState = "light"
+
+colorButton.addEventListener("click", () => {
+    if (userState == "light") {
+        turnDark()
+        userState = "Dark"
+    }
+
+    else {
+        turnLight()
+        userState = "light"
+    }
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// manipulate the title text
+title.innerText = "Hello, Stranger"
+
+
+
+
